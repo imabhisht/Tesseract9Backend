@@ -41,6 +41,6 @@ const task = new AsyncTask('save events', async () => {
     scheduler.stop(); // Stop the scheduler if the condition is met
   }
 });
-const job=new SimpleIntervalJob({ hours: 10, }, task);
+const job=new SimpleIntervalJob({ hours: 4, }, task);
 scheduler.addSimpleIntervalJob(job);
 
